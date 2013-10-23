@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PrefList"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0F2F7"
+    android:orientation="vertical" >
+
+    <!-- RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/CallLogConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_log_config"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/CallLogPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_log_pref"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/retrievedb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retrieve_db_records"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout-->
+
+    <LinearLayout
+        android:id="@+id/eventNotify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/geolocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/geolocation" />
+
+            <EditText
+                android:id="@+id/compMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:ems="10"
+                android:hint="@string/compMsg" >
+
+            </EditText>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

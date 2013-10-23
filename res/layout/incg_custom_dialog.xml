@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/incgCustomLayout" 
+    android:layout_width="match_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+ 
+    <TableLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+        <TableRow 
+            android:id="@+id/incgLogPrefTbRow" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">            
+            
+            <TextView 
+            android:id="@+id/incgLogPrefMonths"
+            android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="@string/incg_months_prompt"/>
+            
+            <Spinner
+	            android:id="@+id/incgSelectMonthsNum"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:entries="@array/incg_months_arrays"
+	            android:prompt="@string/incg_months_prompt"
+	            android:drawSelectorOnTop="true"/>
+           </TableRow>
+           <TableRow 
+               android:id="@+id/incgLogPrefTbRow1" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"> 
+            
+            <TextView 
+            	android:id="@+id/incgLogPrefMin"
+            	android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/incg_min_prompt"/>
+            
+            <Spinner
+	            	android:id="@+id/incgSelectMin"
+	            	android:layout_width="fill_parent"
+	            	android:layout_height="40dp"
+	            	android:entries="@array/incg_min_arrays"
+	            	android:prompt="@string/incg_min_prompt"
+	            	android:drawSelectorOnTop="true"/>
+	            
+        </TableRow>        
+    </TableLayout>
+</LinearLayout>

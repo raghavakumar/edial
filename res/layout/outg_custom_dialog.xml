@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/LinearLayout2" 
+    android:layout_width="match_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+ 
+    <TableLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+        <TableRow 
+            android:id="@+id/outgLogPrefTbRow" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content">            
+            
+            <TextView 
+            android:id="@+id/outgLogPrefMonths"
+            android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:text="@string/outg_months_prompt"/>
+            
+            <Spinner
+	            android:id="@+id/outgSelectMonthsNum"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:entries="@array/outg_months_arrays"
+	            android:prompt="@string/outg_months_prompt"
+	            android:drawSelectorOnTop="true"/>
+           </TableRow>
+           <TableRow 
+               android:id="@+id/outgLogPrefTbRow1" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"> 
+            
+            <TextView 
+            	android:id="@+id/outgLogPrefMin"
+            	android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="@string/outg_min_prompt"/>
+            
+            <Spinner
+	            	android:id="@+id/outgSelectMin"
+	            	android:layout_width="fill_parent"
+	            	android:layout_height="40dp"
+	            	android:entries="@array/outg_min_arrays"
+	            	android:prompt="@string/outg_min_prompt"
+	            	android:drawSelectorOnTop="true"/>
+	            
+        </TableRow>        
+    </TableLayout>
+</LinearLayout>

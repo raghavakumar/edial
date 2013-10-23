@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sort_title">Sort</string>
+    <string name="filter_incg">Incg Pref</string>
+    <string name="filter_outg">Outg Pref</string>
+    <string name="search_title">Search</string>
+    <string name="adv_search">>> Adv Search</string>
+    <string name="past_date_hint">Choose Date</string>
+    <string name="image">Image</string>
+    <string name="app_name">edial</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="editname">editname</string>
+    <string name="phone">Phone</string>
+    <string name="editphone">editphone</string>
+    <string name="submit">submit</string>
+    <string name="slno">slno</string>
+    <string name="TextView">view</string>
+    <string name="CheckBox"></string>
+    <string name="title_activity_config_call_logs">ConfigCallLogs</string>
+    <string name="call_log_config">Config</string>
+    <string name="call_log_pref">Preferences</string>
+    <string name="retrieve_db_records">Show Records</string>
+    <string name="title_activity_my_sqlite_helper">MySQLiteHelper</string>
+    <string name="hello_world">Hello World</string>
+    <string name="back_button">Back</string>
+    <string name="title_activity_store_dbrecords">StoreDBRecords</string>
+    <string name="geolocation">GeoLocation</string>
+    <string name="edit_message">Date From</string>
+    <string name="edit_message1">Date To</string>
+    <string name="button_send">Show Logs</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="change_date">Date</string>
+    <string name="clear_results">Reset</string>
+    <string name="current_date">Current Date  </string>
+    <string name="start_date_label">Select Past Date   </string>
+    <string name="end_date_label">End Date:   </string>
+    <string name="start_date">Start Date:   </string>
+    <string name="end_date">Current Date:   </string>
+    <string name="search_data">Search Results</string>
+    <string name="search_data1">Search Results1</string>
+    <string name="selectall"></string>
+    <string name="title_activity_log_preferences">LogPreferences</string>
+    <string name="log_pref_label">Log Preferences</string>
+    <string name="your_name">yourname</string>
+    <string name="outgSelect_text">Outgoing Log</string>
+    <string name="outgSelect_text_Desc"></string>
+    <string name="incgSelect_text_Desc"></string>
+    <string name="edit_settings">Edit</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="compMsg">Compose Msg</string>
+    <string name="outg_months_prompt">Choose Outgoing Past Log Preferences</string>
+    <string name="cur_loc">Current Location: </string>    
+    <string name="CallLogTransactionService">CallLogTransactionService</string>    
+    <string name="CallLogContactsHistoryService">CallLogContactsHistoryService</string>
+
+    <string-array name="outg_months_arrays">
+        <item>3 months</item>
+        <item>2 months</item>
+        <item>1 months</item>
+    </string-array>
+
+    <string name="outg_min_prompt">Choose Outgoing Past Log Preferences</string>
+
+    <string-array name="outg_min_arrays">
+        <item>10 min</item>
+        <item>8 min</item>
+        <item>5 min</item>
+    </string-array>
+
+    <string name="incg_months_prompt">Choose Incoming Past Log</string>
+    <string name="incgSelect_text">Incoming Log</string>
+
+    <string-array name="incg_months_arrays">
+        <item>3 months</item>
+        <item>2 months</item>
+        <item>1 month</item>
+    </string-array>
+
+    <string name="incg_min_prompt">Choose Incoming Past Log Preferences</string>
+
+    <string-array name="incg_min_arrays">
+        <item>10 min</item>
+        <item>8 min</item>
+        <item>5 min</item>
+    </string-array>
+
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_geo_map">GeoMap</string>
+
+</resources>

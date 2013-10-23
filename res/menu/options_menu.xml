@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search"
+          android:title="@string/search_title"
+          android:icon="@drawable/contact1"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" />
+    <item android:id="@+id/menu_outg_filter"
+          android:icon="@drawable/filter" 
+          android:title="@string/filter_outg" />
+    
+    <item android:id="@+id/menu_incg_filter"
+          android:icon="@drawable/filter" 
+          android:title="@string/filter_incg" />
+    
+    <item android:id="@+id/menu_sort"
+          android:icon="@drawable/filter" 
+          android:title="@string/sort_title" />  
+          
+    
+</menu>

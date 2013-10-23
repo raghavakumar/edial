@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/ListViewRows"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp">
+    
+    <CheckBox
+        android:id="@+id/checkBoxSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/CheckBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/checkBoxSelect"
+        android:background="@drawable/contact1"
+        android:contentDescription="@string/cancel" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#003300"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Arun kumar" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:textSize="10sp"
+        android:text="Out going" />
+
+      <TextView
+          android:id="@+id/phone"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/checkBoxSelect"
+          android:layout_alignBottom="@+id/checkBoxSelect"
+          android:layout_marginLeft="38dp"
+          android:layout_toRightOf="@+id/desc"
+          android:textColor="#003300"
+          android:text="9866736504" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="6dp"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/icon"/>
+</RelativeLayout>
+</RelativeLayout>
