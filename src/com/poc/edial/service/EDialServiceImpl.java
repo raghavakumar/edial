@@ -33,15 +33,15 @@ public class EDialServiceImpl extends EDialService {
 		
 	}
 	
-	public ServiceOutput readCallLogArchive(ServiceInput in) {
+	/*public ServiceOutput readCallLogArchive(ServiceInput in) {
 		// TODO Auto-generated method stub		
-		CallLogArchiveInput archiveInput = (CallLogArchiveInput)in;
-		CallLogArchiveOutput archiveOutput = new CallLogArchiveOutput();
-		CallLogArchiveReport CallLogArchiveReport = new CallLogArchiveReport();
+		//CallLogArchiveInput archiveInput = (CallLogArchiveInput)in;
+		//CallLogArchiveOutput archiveOutput = new CallLogArchiveOutput();
+		//CallLogArchiveReport CallLogArchiveReport = new CallLogArchiveReport();
 		//CallLogArchiveReportRecords()
 		
 		return archiveOutput;		
-	}
+	}*/
 	
 	public ServiceOutput readCallLogHistory (ServiceInput in)
 	{
