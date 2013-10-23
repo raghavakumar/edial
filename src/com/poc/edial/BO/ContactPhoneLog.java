@@ -71,7 +71,7 @@ public class ContactPhoneLog {
 				    });
 			 }		  
 		  parentActivity.lvCustomList.setAdapter(contactListAdapter);
-		 }			
+	}			
 	
 	
 	/** Read call logs from Call History and display in CustomAdapter ListView.**/	

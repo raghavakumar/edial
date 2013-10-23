@@ -33,6 +33,16 @@ public class EDialServiceImpl extends EDialService {
 		
 	}
 	
+	public ServiceOutput readCallLogArchive(ServiceInput in) {
+		// TODO Auto-generated method stub		
+		CallLogArchiveInput archiveInput = (CallLogArchiveInput)in;
+		CallLogArchiveOutput archiveOutput = new CallLogArchiveOutput();
+		CallLogArchiveReport CallLogArchiveReport = new CallLogArchiveReport();
+		//CallLogArchiveReportRecords()
+		
+		return archiveOutput;		
+	}
+	
 	public ServiceOutput readCallLogHistory (ServiceInput in)
 	{
 		CallLogServiceInput serviceInput = (CallLogServiceInput)in;
@@ -83,6 +93,7 @@ public class EDialServiceImpl extends EDialService {
 				CallData.setNumber(cacheNumber);
 				CallData.setCallType(callType);
 				CallData.setDuration(durationMillis);
+				
 				output.addCallData(CallData);
 			}
 		}
@@ -92,12 +103,16 @@ public class EDialServiceImpl extends EDialService {
 	@Override
 	public ServiceOutput readCallLog(ServiceInput in) {
 		CallLogInput input = (CallLogInput)in;
-		CallLogOutput output = new CallLogOutput();	
-		
-		//business logic
-		//1. get cursor from call log api		 
-		//2. and add CallLogData to output		
+		CallLogOutput output = new CallLogOutput();
+				
 		output = (CallLogOutput) readCallLogHistory (new CallLogServiceInput(input.getActivity()));
+		
 		return output;
+	}
+
+	@Override
+	public ServiceOutput readCallLogArchive(ServiceInput in) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

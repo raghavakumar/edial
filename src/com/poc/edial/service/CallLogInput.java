@@ -32,8 +32,7 @@ public class CallLogInput extends ActivityInput implements ServiceInput {
 			Log.e(ConfigCallLogs.TAG, "Error parsing " + activity.startDate.getText().toString() + " or " + activity.currentDate.getText().toString(), e);
 			//TODO: add a InvalidInputException and throw
 		}
-	}
-	
+	}	
 	
 	public Date getStartDate() {
 		return startDate;
@@ -52,6 +51,5 @@ public class CallLogInput extends ActivityInput implements ServiceInput {
 	}
 	public void setCallType(int callType) {
 		this.callType = callType;
-	}
-	
+	}	
 }

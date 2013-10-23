@@ -17,4 +17,7 @@ public class EDialConstants {
     public static final String INCG = "Incoming";    
     public static final int INCOMING_CALLS = 1;
     public static final int OUTGOING_CALLS = 2;
+    
+    
+    public static final String CALLLOG_ARCHIVE_REPORT_AS_ON = "CallLog Archive Report As on : "; 
 }

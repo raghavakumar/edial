@@ -4,14 +4,11 @@ package com.poc.edial;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.location.Geocoder;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 //import android.support.v4.app.DialogFragment;
-import android.widget.TabHost;
  
 @SuppressWarnings("deprecation")
 public class MainActivity extends TabActivity {
@@ -36,26 +33,32 @@ public class MainActivity extends TabActivity {
 		// CallLog tab
 		Intent intentCallLog = new Intent().setClass(this, ConfigCallLogs.class);
 		TabSpec tabCallLog = tabHost
-		  .newTabSpec("Apple")
+		  .newTabSpec("CallLog")
 		  .setIndicator("", ressources.getDrawable(R.drawable.icon_calllog))
 		  .setContent(intentCallLog);
 		
 		// Preference tab
 		Intent intentPreference = new Intent().setClass(this, LogPreferences.class);
 		TabSpec tabSpecPreference = tabHost
-		  .newTabSpec("Windows")
+		  .newTabSpec("Preference")
 		  .setIndicator("", ressources.getDrawable(R.drawable.icon_pref))
 		  .setContent(intentPreference);
+		
+		// CallLog Archive tab
+		Intent intentCallLogArchive = new Intent().setClass(this, CallLogArchive.class);
+		TabSpec tabSpecCallLogArchive = tabHost
+		  .newTabSpec("Archive")
+		  .setIndicator("", ressources.getDrawable(R.drawable.icon_calllogarchive))
+		  .setContent(intentCallLogArchive);
 		
 		// add all tabs 
 		tabHost.addTab(tabSpecHome);
 		tabHost.addTab(tabCallLog);
-		tabHost.addTab(tabSpecPreference);	
+		tabHost.addTab(tabSpecPreference);
+		tabHost.addTab(tabSpecCallLogArchive);
  
 		//set Windows tab as default (zero based)
 		tabHost.setCurrentTab(0);
-		
-		
 	}	
 	
 }

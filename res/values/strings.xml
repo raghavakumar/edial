@@ -52,8 +52,8 @@
     <string name="cancel">Cancel</string>
     <string name="compMsg">Compose Msg</string>
     <string name="outg_months_prompt">Choose Outgoing Past Log Preferences</string>
-    <string name="cur_loc">Current Location: </string>    
-    <string name="CallLogTransactionService">CallLogTransactionService</string>    
+    <string name="cur_loc">Current Location: </string>
+    <string name="CallLogTransactionService">CallLogTransactionService</string>
     <string name="CallLogContactsHistoryService">CallLogContactsHistoryService</string>
 
     <string-array name="outg_months_arrays">
@@ -90,5 +90,6 @@
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_geo_map">GeoMap</string>
+    <string name="title_activity_call_log_archive">CallLogArchive</string>
 
 </resources>

@@ -51,8 +51,7 @@ public class configEventHandler {
 		this.parentActivity = parentActivity;
 		setcurDateVal();
 		invokeHandler();
-	}
-	
+	}	
 	
 	public void setcurDateVal()
 	{
@@ -62,8 +61,7 @@ public class configEventHandler {
 		cal_year = cal.get(Calendar.YEAR);
 		cal_month = cal.get(Calendar.MONTH);
 		cal_day = cal.get(Calendar.DAY_OF_MONTH);
-	}
-	
+	}	
 	
 	public void invokeHandler ()
 	{	
